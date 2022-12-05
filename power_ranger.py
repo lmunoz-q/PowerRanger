@@ -13,7 +13,7 @@ dirs = {".png": "Images",
         ".mp3": "Musiques",
         ".wav": "Musiques"}
 
-tri_dir = Path.home() / "Tri" # Path dossier du tri
+tri_dir = Path.home() / "Ranger" # Path dossier du tri
 files = [f for f in tri_dir.iterdir() if f.is_file()]
 for f in files:
 	output_dir = tri_dir / dirs.get(f.suffix, "Autres")
